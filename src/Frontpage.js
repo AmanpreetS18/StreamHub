@@ -22,8 +22,8 @@ export default function Frontpage() {
             <section className="explore-section">
                 <h2>Explore Movies and Series</h2>
                 <p>Ready to dive in? Explore our vast collection of movies, ranging from the latest blockbusters to timeless classics.</p>
-                <button className="explore-button" onClick={() => navigate('/movies')}>Explore All Movies</button>
-                <button className="explore-button" onClick={() => navigate('/tv')}>Explore TV Series</button>
+                <button className="explore-button" onClick={() => navigate('/movieapp/movies')}>Explore All Movies</button>
+                <button className="explore-button" onClick={() => navigate('/movieapp/tv')}>Explore TV Series</button>
             </section>
 
             <footer className="footer">
