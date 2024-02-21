@@ -3,11 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import Slider from './slider';
 import './Home.css'; // Assuming you have a CSS file for styling
 
-export default function Home() {
+export default function Frontpage() {
     const navigate = useNavigate();
 
     return (
-        <div className="home-container">
+        
+            <div className="home-container">
             <header className="header">
                 <h1>Welcome to <span className="brand-name">StreamHub</span></h1>
                 <p>Explore a world of cinematic wonders with <span className="brand-name">StreamHub</span>. Dive into a vast collection of films, discover new releases, and enjoy timeless classics. Your journey into the world of movies starts here!</p>
@@ -29,5 +30,6 @@ export default function Home() {
                 <p>© {new Date().getFullYear()} StreamHub. All rights reserved.</p>
             </footer>
         </div>
+       
     );
 }

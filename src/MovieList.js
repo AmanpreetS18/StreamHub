@@ -29,19 +29,19 @@ export default function MovieList({ movies }) {
     return (
         <div>
             <div>
-                <select value={sortType} onChange={handleSortTypeChange}>
+                <select className='sort' value={sortType} onChange={handleSortTypeChange}>
                     <option value="votes">Votes</option>
                     <option value="rating">Rating</option>
                     <option value="Date">Release Date</option>
                 </select>
-                <button onClick={handleSort}>
+                <button className='btn' onClick={handleSort}>
                     {sortType !== "Date" ? sortOrder === "asc" ? "High to Low" : "Low to High" : sortOrder === "asc" ? "New to Old" : "Old to New"}
                 </button>
             </div>
             <ul className='movielist'>
-                {sortedMovies.map((movie) => (
-                    <MovieCard key={movie.id} movie={movie} />
-                ))}
+                {sortedMovies.map((movies) => 
+                    <MovieCard key={movies.id} movie={movies} />
+                )}
             </ul>
         </div>
     )

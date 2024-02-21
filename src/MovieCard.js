@@ -17,7 +17,7 @@ export default function MovieCard({movie}) {
         localStorage.setItem('favoriteMovies',
         JSON.stringify(favMovies.filter(([_,movieId])=>movieId !== id)))
     }
-  },[isFavorite,title,id])
+  },[isFavorite,title,id]);
   return (
     <div>
         <li className='card'>

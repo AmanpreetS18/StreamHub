@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Tvlist from './Tvlist'
 
 export default function FavTv() {
-  const [fav,setFav]= useState([])
+  const [fav,setFav]= useState([]);
   const favoriteSeriesIDs = JSON.parse(localStorage.getItem('favoriteSeries')) || []
   const fetchSeries = async() =>{
     try {
@@ -20,7 +20,7 @@ export default function FavTv() {
      const favoriteSeries = mainTvList.filter((series)=>
          favoriteSeriesIDs.some(([_,tvId])=>tvId === series.id)
      )
-     return favoriteSeries
+     return favoriteSeries;
   }
    renderFavoriteSeries().then((response)=>{
     setFav(response)

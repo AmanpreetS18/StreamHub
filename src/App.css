@@ -2,8 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  
 }
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
+}
 .card{
   /* background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
@@ -78,6 +85,20 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   color: #fff;
 }
 
+.signout{
+ 
+  background-color: #ff5722;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.signout a{
+  text-decoration: none;
+  color: #fff;
+}
 .search {
   display: flex;
   align-items: center;
@@ -127,25 +148,29 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 13%,
   border:none;
   background-color: #42a5f5;
 }
-.pagination{
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  margin-bottom: 40px;
-  margin-top: 20px;
+.sort {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
 }
-.pagination button{
-  padding: 5px 35px;
+
+.btn {
+  background-color: #ff5722; /* Orange color */
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 13%, rgba(252,176,69,1) 100%);
-font-size: 20px;
-font-weight: bold;
-cursor: pointer;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.pagination button:disabled{
-  background: none;
-  background-color: gray;
- 
+
+.btn:hover {
+  background-color: #e64a19; /* Darker orange color on hover */
 }
+
